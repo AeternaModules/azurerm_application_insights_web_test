@@ -28,10 +28,10 @@ EOT
     resource_group_name     = string
     description             = optional(string)
     enabled                 = optional(bool)
-    frequency               = optional(number, 300)
+    frequency               = optional(number) # Default: 300
     retry_enabled           = optional(bool)
     tags                    = optional(map(string))
-    timeout                 = optional(number, 30)
+    timeout                 = optional(number) # Default: 30
   }))
 }
 
