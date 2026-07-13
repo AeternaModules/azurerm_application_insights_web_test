@@ -28,10 +28,10 @@ EOT
     resource_group_name     = string
     description             = optional(string)
     enabled                 = optional(bool)
-    frequency               = optional(number) # Default: 300
+    frequency               = optional(number)
     retry_enabled           = optional(bool)
     tags                    = optional(map(string))
-    timeout                 = optional(number) # Default: 30
+    timeout                 = optional(number)
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_application_insights_web_test's provider source ---
   # Not auto-enabled: either a bespoke provider validator we can't safely translate,
